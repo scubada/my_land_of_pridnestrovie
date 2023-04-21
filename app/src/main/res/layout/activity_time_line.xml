@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.TimeLineActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/circle"
+        android:padding="@dimen/_7sdp"
+        android:paddingRight="3dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/candara_bold"
+        android:text="Вопрос 2/10"
+        android:textColor="@color/blue_color"
+        android:textSize="@dimen/_26ssp"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/questions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:fontFamily="@font/candara"
+        android:gravity="center_vertical"
+        android:justificationMode="inter_word"
+        android:text="Расположите данные памятники архитектуре по времени возведения от самого раннего к более позднему"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:targetApi="o" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dragBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/questions"
+        app:layout_constraintStart_toStartOf="@+id/questions"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="0dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:visibility="visible"
+                    app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/item_drag" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:progress="1"
+        android:progressTint="@color/blue_color"
+        android:secondaryProgressTint="@color/secondaryProgressAndShadowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questions" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/timeLineContainer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/questions"
+        app:layout_constraintStart_toStartOf="@+id/questions"
+        app:layout_constraintTop_toBottomOf="@+id/dragBox">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_round"
+                        android:backgroundTint="@color/drag_drop_box"
+                        android:fontFamily="@font/candara_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="1"
+                        android:textSize="@dimen/_25ssp" />
+
+                </LinearLayout>
+
+
+                <com.sgk.myworldmogilev.helper.DragAndDropContainer
+                    android:id="@+id/container1a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:background="@color/light_gray"
+                    android:tag="choice" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/text_round"
+                        android:backgroundTint="@color/drag_drop_box"
+                        android:fontFamily="@font/candara_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="2"
+                        android:textSize="@dimen/_25ssp" />
+
+                </LinearLayout>
+
+                <com.sgk.myworldmogilev.helper.DragAndDropContainer
+                    android:id="@+id/container2a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:background="@color/light_gray"
+                    android:tag="choice" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/text_round"
+                        android:backgroundTint="@color/drag_drop_box"
+                        android:fontFamily="@font/candara_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:textSize="@dimen/_25ssp" />
+
+                </LinearLayout>
+
+                <com.sgk.myworldmogilev.helper.DragAndDropContainer
+                    android:id="@+id/container3a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:background="@color/light_gray"
+                    android:tag="choice" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/text_round"
+                        android:backgroundTint="@color/drag_drop_box"
+                        android:fontFamily="@font/candara_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="4"
+                        android:textSize="@dimen/_25ssp" />
+
+                </LinearLayout>
+
+                <com.sgk.myworldmogilev.helper.DragAndDropContainer
+                    android:id="@+id/container4a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:background="@color/light_gray"
+                    android:tag="choice" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:alpha="0"
+        android:fontFamily="@font/candara"
+        android:gravity="center"
+        android:text="Правильный ответ:\n1) [2], 2) [4], 3) [1], 4) [3]"
+        android:textColor="@color/doneChoice"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="@+id/timeLineContainer"
+        app:layout_constraintStart_toStartOf="@+id/timeLineContainer"
+        app:layout_constraintTop_toBottomOf="@+id/timeLineContainer"
+        tools:targetApi="o" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/choiceSelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/blue_color_disabled"
+        app:cardCornerRadius="@dimen/_11sdp"
+        app:cardElevation="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questions"
+        app:layout_constraintStart_toStartOf="@+id/questions">
+
+        <TextView
+            android:id="@+id/textChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_13ssp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:fontFamily="@font/candara_bold"
+            android:text="Ответить"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue_color" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

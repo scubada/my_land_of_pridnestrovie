@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.NotInternetActivity">
+
+    <ImageView
+        android:id="@+id/lottie"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginBottom="@dimen/_120sdp"
+        android:contentDescription="@string/content_preview_image"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/blue_color" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/candara_bold"
+        android:text="@string/no_internet"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="@+id/lottie"
+        app:layout_constraintStart_toStartOf="@id/lottie"
+        app:layout_constraintTop_toBottomOf="@id/lottie" />
+
+    <TextView
+        android:id="@+id/noname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/candara"
+        android:gravity="center"
+        android:text="@string/warning_no_internet"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="@+id/no"
+        app:layout_constraintStart_toStartOf="@id/no"
+        app:layout_constraintTop_toBottomOf="@id/no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

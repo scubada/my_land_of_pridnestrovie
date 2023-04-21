@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/bg_gradient"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candara_bold"
+                android:gravity="center_vertical"
+                android:text="Общий тест"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candara"
+                android:gravity="center_vertical"
+                android:text="На знание материала всех районов"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:contentDescription="@string/content_preview_image"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_star"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:background="@drawable/test_item_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp">
+
+        <TextView
+            android:id="@+id/title_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:breakStrategy="balanced"
+            android:fontFamily="@font/candara_bold"
+            android:gravity="center_vertical"
+            android:hyphenationFrequency="full"
+            android:text="Могилевский район"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <ImageView
+            android:id="@+id/img_test"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:contentDescription="@string/content_preview_image"
+            android:paddingTop="@dimen/_10sdp"
+            android:alpha="0.8"
+            android:paddingBottom="@dimen/_10sdp"
+            android:scaleType="centerInside"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

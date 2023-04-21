@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Мая_Зямля_Прыдняпроўе" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorPrimaryDark" tools:targetApi="23">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+
+        <item name="colorPrimary">@color/blue_color</item>
+        <item name="colorAccent">@color/blue_color</item>
+
+        <item name="android:textColorHint">@color/blue_color_disabled</item>
+        <item name="colorControlNormal">@color/blue_color_disabled</item>
+        <item name="colorControlActivated">@color/blue_color</item>
+        <item name="colorControlHighlight">@color/blue_color_disabled</item>
+    </style>
+
+    <style name="bottom_nav_text">
+        <item name="android:fontFamily">@font/candara</item>
+    </style>
+
+    <style name="bottom_nav_text_achive">
+        <item name="android:fontFamily">@font/candara_bold</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue_color</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue_color</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Launcher" parent="Theme.Мая_Зямля_Прыдняпроўе">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "319600776172",
+    "firebase_url": "https://myworldmogilev-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "myworldmogilev",
+    "storage_bucket": "myworldmogilev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319600776172:android:aba73da5758aa3dbd8a6c9",
+        "android_client_info": {
+          "package_name": "com.sgk.myworldmogilev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319600776172-l6g51voh030siuk9qbcph552hi7u4gob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sgk.myworldmogilev",
+            "certificate_hash": "254226db0b9b37fa91de8d7a1051b0f8e10e62ce"
+          }
+        },
+        {
+          "client_id": "319600776172-amab60c2g83fd3g9s07bgo77cugspod3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9R2UH3LnpG0c5x4mhDloJ9_5mntZJQ-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319600776172-amab60c2g83fd3g9s07bgo77cugspod3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.welcomeFragments.Fragment3Fragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"
+        android:src="@drawable/back2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:id="@+id/text4"
+            android:text="@string/fragment2_text_pre"
+            android:textColor="@color/blue_color"
+            android:layout_marginTop="-70dp"
+            android:textSize="@dimen/_18ssp"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:text="@string/fragment2_text"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/_18ssp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:text="@string/fragment3_text"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/_18ssp"
+            />
+
+        <TextView
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/fragment4_text"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/_18ssp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

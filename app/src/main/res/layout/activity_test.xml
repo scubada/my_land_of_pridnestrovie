@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.TestActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/circle"
+        android:padding="@dimen/_7sdp"
+        android:paddingRight="3dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:fontFamily="@font/candara_bold"
+        android:singleLine="true"
+        android:text="Амогусоновский район"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/candara_bold"
+        android:text="Вопрос 2/10"
+        android:textColor="@color/blue_color"
+        android:textSize="@dimen/_26ssp"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/categoryName" />
+
+    <TextView
+        android:id="@+id/questions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:fontFamily="@font/candara"
+        android:gravity="center_vertical"
+        android:justificationMode="inter_word"
+        android:text="Для обесппьютером необходимо делать перерывы для операторов компьютерного набора"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toTopOf="@+id/progressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:targetApi="o" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:progress="1"
+        android:progressTint="@color/blue_color"
+        android:secondaryProgressTint="@color/secondaryProgressAndShadowButton"
+        app:layout_constraintBottom_toTopOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questions" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:clickable="true"
+        android:tag="1"
+        app:cardBackgroundColor="@color/green_color"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/questions"
+        app:layout_constraintStart_toStartOf="@+id/questions"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar"
+        app:rippleColor="@color/pressed">
+
+        <TextView
+            android:id="@+id/textButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:autoSizeMaxTextSize="@dimen/_18ssp"
+            android:autoSizeMinTextSize="@dimen/_10ssp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:text="A. фамилию, имя, отчество пострадавшего, время"
+            android:textColor="@color/white"
+            tools:targetApi="o" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:clickable="true"
+        android:tag="2"
+        app:cardBackgroundColor="@color/green_color"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:rippleColor="@color/pressed">
+
+        <TextView
+            android:id="@+id/textButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:autoSizeMaxTextSize="@dimen/_18ssp"
+            android:autoSizeMinTextSize="@dimen/_10ssp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:text="A. фамилию, имя, отчество пострадавшего, время"
+            android:textColor="@color/white"
+            tools:targetApi="o" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:clickable="true"
+        android:tag="3"
+        app:cardBackgroundColor="@color/green_color"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@null"
+        app:layout_constraintBottom_toTopOf="@+id/choiceSelect"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:rippleColor="@color/pressed">
+
+        <TextView
+            android:id="@+id/textButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:autoSizeMaxTextSize="@dimen/_18ssp"
+            android:autoSizeMinTextSize="@dimen/_10ssp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/candara"
+            android:gravity="center"
+            android:text="A. фамилию, имя, отчество пострадавшего, время"
+            android:textColor="@color/white"
+            tools:targetApi="o" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/choiceSelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:clickable="false"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/blue_color_disabled"
+        app:cardCornerRadius="@dimen/_11sdp"
+        app:cardElevation="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questions"
+        app:layout_constraintStart_toStartOf="@+id/questions">
+
+        <TextView
+            android:id="@+id/textChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_13ssp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:fontFamily="@font/candara_bold"
+            android:text="@string/choice"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/candara_bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/blue_color"
+            android:text="Загрузка..."
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

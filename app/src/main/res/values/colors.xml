@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="white_gray">#ECECEC</color>
+    <color name="blurColor">#DAFFFFFF</color>
+    <color name="background">#EFEFEF</color>
+    <color name="black_t">#D9000000</color>
+    <color name="background_half_gradient">#CCEFEFEF</color>
+    <color name="background_half">#CCFFFFFF</color>
+    <color name="secondaryProgressAndShadowButton">#D7D7D7</color>
+    <color name="primaryProgress">#969696</color>
+    <color name="gray">#80000000</color>
+    <color name="drag_drop_box">#4D000000</color>
+    <color name="drag_drop_box_gray">#66000000</color>
+    <color name="light_gray">#1A000000</color>
+    <color name="black">#000000</color>
+    <color name="green_color">#41D0AB</color>
+    <color name="green_color_half">#B341D0AB</color>
+    <color name="pressed">#32A185</color>
+    <color name="blue_color_transparent">#D3E3EEFB</color>
+    <color name="blue_color">#3063A4</color>
+    <color name="blue_color_half">#B33063A4</color>
+    <color name="blue_color_pressed">#1F416B</color>
+    <color name="blue_color_disabled">#513063A4</color>
+    <color name="errorChoice">#B2F44336</color>
+    <color name="doneChoice">#008E49</color>
+    <color name="green_color_welcome">#4caf50</color>
+    <color name="colorGradStart">#FDC830</color>
+    <color name="colorGradEnd">#F37335</color>
+    <color name="colorWhiteTransparent">#7CFFFFFF</color>
+    <color name="secondColor">#70E8CA</color>
+</resources>

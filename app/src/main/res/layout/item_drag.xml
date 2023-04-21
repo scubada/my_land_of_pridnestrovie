@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp">
+
+        <com.sgk.myworldmogilev.helper.DragAndDropContainer
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/drag_drop_box"
+            android:tag="check">
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="0">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/preview_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_gray"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/progress_animation" />
+
+            </RelativeLayout>
+        </com.sgk.myworldmogilev.helper.DragAndDropContainer>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

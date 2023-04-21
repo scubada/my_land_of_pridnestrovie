@@ -1,0 +1,26 @@
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    width: 200%;
+    align-items: center;
+    padding-top: 60%
+    height: 100%;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container img, map {
+    width: 100%;
+    height: 20%;
+    margin-top: 25%;
+}

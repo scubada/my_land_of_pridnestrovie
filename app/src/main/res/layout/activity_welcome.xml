@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activities.WelcomeActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/spring_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:dotsColor="@color/blue_color"
+        app:dotsCornerRadius="10dp"
+        app:dotsSize="@dimen/_8sdp"
+        app:dotsSpacing="6dp"
+        app:dotsStrokeColor="@color/blue_color"
+        app:dotsStrokeWidth="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonok"
+        app:layout_constraintEnd_toEndOf="@+id/buttonok"
+        app:layout_constraintStart_toStartOf="@+id/buttonok"
+        app:stiffness="300" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buttonok"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="8dp"
+        app:cardBackgroundColor="@color/blue_color"
+        app:cardCornerRadius="@dimen/_11sdp"
+        app:cardElevation="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/candara"
+            android:text="@string/skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
