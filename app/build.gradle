@@ -86,4 +86,5 @@ dependencies {
     implementation 'com.google.android:flexbox:2.0.1'
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.github.yesidlazaro:GmailBackground:1.2.0'
+    implementation 'com.codesgood:justifiedtextview:1.1.0'
 }

@@ -37,6 +37,7 @@ class ImageAdapter(
             .into(object : CustomTarget<Bitmap>() {
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
                     holder.preview.setImageBitmap(resource)
+                    holder.preview.visibility = View.VISIBLE
                     holder.previewLoading.visibility = View.GONE
                 }
 

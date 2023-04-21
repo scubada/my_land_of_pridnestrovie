@@ -179,19 +179,17 @@
                     android:textSize="@dimen/_15sdp"
                     tools:text="Ул. Пушкина, дом колотушкина" />
 
-                <TextView
+                <com.codesgood.views.JustifiedTextView
                     android:id="@+id/desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:fontFamily="@font/candara"
-                    android:textIsSelectable="true"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_15sdp"
-                    android:layout_gravity="center_vertical|end"
+                    android:gravity="fill_horizontal"
                     android:justificationMode="inter_word"
-                    tools:targetApi="o"
-                    tools:text="fsdfsdfdfsdfдваолдполваоолдаволдолдоавловаsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd" />
+                    tools:text="fsdfsdfdfsdfдваолдmолваоddолдаволдолдоавловаsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd" />
 
                 <TextView
                     android:id="@+id/dataV"
