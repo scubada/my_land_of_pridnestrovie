@@ -186,11 +186,12 @@
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:fontFamily="@font/candara"
                     android:textIsSelectable="true"
-                    android:justificationMode="inter_word"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical|end"
+                    android:justificationMode="inter_word"
                     tools:targetApi="o"
-                    tools:text="fsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd" />
+                    tools:text="fsdfsdfdfsdfдваолдполваоолдаволдолдоавловаsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd" />
 
                 <TextView
                     android:id="@+id/dataV"

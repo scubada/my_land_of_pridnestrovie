@@ -50,7 +50,7 @@
     <TextView
         android:id="@+id/questions"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_14sdp"
         android:layout_marginRight="@dimen/_25sdp"
         android:fontFamily="@font/candara"
