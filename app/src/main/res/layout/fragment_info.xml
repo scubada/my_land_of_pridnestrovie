@@ -14,7 +14,7 @@
         android:layout_marginStart="@dimen/_20ssp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="@dimen/_20ssp"
-        android:fontFamily="@font/candara_bold"
+        android:fontFamily="@font/bold"
         android:text="@string/about_text"
         android:textColor="@color/blue_color"
         android:textSize="@dimen/_30ssp"
@@ -30,6 +30,8 @@
         android:background="@drawable/test_item_gradient"
         android:backgroundTint="@color/blue_color"
         android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -37,18 +39,16 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginStart="@dimen/_20sdp"
             android:layout_weight="1"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/medium"
             android:gravity="center_vertical"
             android:text="@string/intent_to_site_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp" />
+            android:textSize="@dimen/_18ssp" />
 
         <ImageView
             android:layout_width="@dimen/_20sdp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_20ssp"
             android:contentDescription="@string/content_preview_image"
             android:src="@drawable/ic_arrow_forward"
             app:tint="@color/white" />
@@ -60,6 +60,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_12sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         android:background="@drawable/test_item_gradient"
         android:backgroundTint="@color/blue_color"
         android:orientation="horizontal"
@@ -70,18 +72,16 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginStart="@dimen/_20sdp"
             android:layout_weight="1"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/medium"
             android:gravity="center_vertical"
             android:text="@string/contacts_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp" />
+            android:textSize="@dimen/_18ssp" />
 
         <ImageView
             android:layout_width="@dimen/_20sdp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_20ssp"
             android:contentDescription="@string/content_preview_image"
             android:src="@drawable/ic_arrow_forward"
             app:tint="@color/white" />
@@ -96,6 +96,8 @@
         android:background="@drawable/test_item_gradient"
         android:backgroundTint="@color/blue_color"
         android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         app:layout_constraintEnd_toEndOf="@+id/contact"
         app:layout_constraintStart_toStartOf="@+id/contact"
         app:layout_constraintTop_toBottomOf="@+id/contact">
@@ -103,18 +105,16 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginStart="@dimen/_20sdp"
             android:layout_weight="1"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/medium"
             android:gravity="center_vertical"
             android:text="@string/write_letter_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp" />
+            android:textSize="@dimen/_18ssp" />
 
         <ImageView
             android:layout_width="@dimen/_20sdp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_20ssp"
             android:contentDescription="@string/content_preview_image"
             android:src="@drawable/ic_arrow_forward"
             app:tint="@color/white" />

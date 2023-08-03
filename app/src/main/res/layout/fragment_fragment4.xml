@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_20sdp"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/bold"
             android:gravity="center"
             android:text="@string/fragment5_text"
             android:textColor="@color/blue_color"

@@ -123,10 +123,10 @@
                     android:id="@+id/previewName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/candara_bold"
+                    android:fontFamily="@font/medium"
                     android:singleLine="true"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16ssp"
+                    android:textSize="@dimen/_14ssp"
                     tools:text="Могилёвский областной исполнительный комитет" />
 
                 <LinearLayout
@@ -139,11 +139,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_1sdp"
-                        android:fontFamily="@font/candara"
+                        android:fontFamily="@font/reg"
                         android:singleLine="true"
                         android:text="@string/show_more"
                         android:textColor="@color/blue_color"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="@dimen/_13ssp" />
 
                     <ImageView
                         android:layout_width="@dimen/_10sdp"
@@ -186,7 +186,7 @@
             android:textSize="@dimen/_12ssp"
             android:layout_marginTop="@dimen/_5sdp"
             android:textColor="@color/blue_color"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/bold"
             android:text="Загрузка..."
             />
 

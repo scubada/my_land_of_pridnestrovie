@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_12ssp"
             android:layout_marginTop="@dimen/_5sdp"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/bold"
             android:textColor="@color/blue_color"
             android:text="Загрузка..."
             />

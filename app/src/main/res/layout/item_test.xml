@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/candara_bold"
+                android:fontFamily="@font/bold"
                 android:gravity="center_vertical"
                 android:text="@string/item_test_common_title"
                 android:textColor="@color/white"
@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/candara"
+                android:fontFamily="@font/medium"
                 android:gravity="center_vertical"
                 android:text="@string/item_test_common_subtitle"
                 android:textColor="@color/white"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:breakStrategy="balanced"
-            android:fontFamily="@font/candara_bold"
+            android:fontFamily="@font/medium"
             android:gravity="center_vertical"
             android:hyphenationFrequency="full"
             tools:text="Могилевский район"
@@ -95,6 +95,7 @@
             android:contentDescription="@string/content_preview_image"
             android:paddingTop="@dimen/_10sdp"
             android:alpha="0.8"
+            tools:src="@drawable/gerbtest"
             android:paddingBottom="@dimen/_10sdp"
             android:scaleType="centerInside"
             />

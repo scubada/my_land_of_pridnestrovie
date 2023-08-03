@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Викторина"
+    <item
+        android:title="Викторина"
         android:id="@+id/test"
-        android:icon="@drawable/ic_test"/>
-    <item android:title="Карта"
+        android:icon="@drawable/ic_test_selector" />
+    <item
+        android:title="Карта"
         android:id="@+id/map"
         android:checked="true"
-        android:icon="@drawable/ic_map"/>
+        android:icon="@drawable/ic_map_selector" />
     <item android:title="О нас"
         android:id="@+id/settings"
         android:icon="@drawable/ic_info"/>

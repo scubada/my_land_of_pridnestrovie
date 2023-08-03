@@ -24,8 +24,8 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_48sdp"
-        android:fontFamily="@font/candara_bold"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/bold"
         android:gravity="center"
         android:textSize="@dimen/_18ssp"
         android:text="@string/contact_peace_text"
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:fontFamily="@font/candara_bold"
+                android:fontFamily="@font/medium"
                 android:text="@string/address"
                 android:textColor="@color/blue_color"
                 android:textSize="@dimen/_14sdp" />
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:fontFamily="@font/candara_bold"
+                android:fontFamily="@font/medium"
                 android:text="@string/time"
                 android:textColor="@color/blue_color"
                 android:textSize="@dimen/_14sdp" />
@@ -154,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:fontFamily="@font/candara_bold"
+                android:fontFamily="@font/medium"
                 android:text="@string/mail"
                 android:textColor="@color/blue_color"
                 android:textSize="@dimen/_14sdp" />

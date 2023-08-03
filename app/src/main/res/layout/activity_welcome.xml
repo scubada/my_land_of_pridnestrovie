@@ -57,7 +57,7 @@
             android:layout_gravity="center"
             android:paddingTop="@dimen/_10sdp"
             android:paddingBottom="@dimen/_10sdp"
-            android:fontFamily="@font/candara"
+            android:fontFamily="@font/semibold"
             android:text="@string/skip"
             android:textColor="@color/white"
             android:textSize="@dimen/_14ssp" />
