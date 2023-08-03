@@ -51,4 +51,13 @@
     <string name="adress">Почта</string>
     <string name="write_correct_email">Введите корректный адрес электронной почты!</string>
     <string name="message">Сообщение</string>
+    <string name="address_name">address_name</string>
+    <string name="time_job">time_job</string>
+    <string name="email_address">email_address</string>
+    <string name="feedback">Ответить</string>
+    <string name="test_title_tesst">Соотнесите эти памятники архитектуры со стилем, в котором они построены:</string>
+    <string name="item_test_common_subtitle">На знание материала всех районов</string>
+    <string name="item_test_common_title">Общий тест</string>
+    <string name="drag_image">drag_image</string>
+    <string name="drag_load_image">drag_load_image</string>
 </resources>

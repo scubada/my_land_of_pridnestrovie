@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,9 +14,8 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="@dimen/_20sdp"
-        android:paddingTop="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
         android:paddingEnd="@dimen/_12sdp"
-        android:paddingBottom="@dimen/_10sdp"
         android:visibility="gone">
 
         <LinearLayout
@@ -30,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/candara_bold"
                 android:gravity="center_vertical"
-                android:text="Общий тест"
+                android:text="@string/item_test_common_title"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
@@ -39,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/candara"
                 android:gravity="center_vertical"
-                android:text="На знание материала всех районов"
+                android:text="@string/item_test_common_subtitle"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp" />
 
@@ -50,8 +49,7 @@
             android:layout_height="@dimen/_80sdp"
             android:contentDescription="@string/content_preview_image"
             android:padding="@dimen/_10sdp"
-            android:src="@drawable/ic_star"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_star" />
 
     </LinearLayout>
 
@@ -73,8 +71,8 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="@dimen/_20sdp"
-        android:paddingTop="@dimen/_2sdp"
-        android:paddingBottom="@dimen/_2sdp">
+        android:paddingEnd="@dimen/_20sdp"
+        android:padding="@dimen/_2sdp">
 
         <TextView
             android:id="@+id/title_test"
@@ -85,7 +83,7 @@
             android:fontFamily="@font/candara_bold"
             android:gravity="center_vertical"
             android:hyphenationFrequency="full"
-            android:text="Могилевский район"
+            tools:text="Могилевский район"
             android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
@@ -94,7 +92,6 @@
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_80sdp"
             android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
             android:contentDescription="@string/content_preview_image"
             android:paddingTop="@dimen/_10sdp"
             android:alpha="0.8"
@@ -103,6 +100,5 @@
             />
 
     </LinearLayout>
-
 
 </LinearLayout>

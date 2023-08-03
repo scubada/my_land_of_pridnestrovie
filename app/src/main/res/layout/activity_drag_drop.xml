@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="@dimen/_25sdp"
+    android:paddingEnd="@dimen/_25sdp"
+    android:paddingTop="@dimen/_40sdp"
     tools:context=".views.activities.DragDropActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/back"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        android:layout_marginStart="@dimen/_25sdp"
-        android:layout_marginTop="@dimen/_40sdp"
         android:layout_marginBottom="@dimen/_25sdp"
         android:background="@drawable/circle"
         android:padding="@dimen/_7sdp"
-        android:paddingRight="3dp"
         android:src="@drawable/ic_arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,19 +28,19 @@
         android:layout_marginTop="@dimen/_15sdp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/candara_bold"
-        android:text="Вопрос 2/10"
+        tools:text="Вопрос 2/10"
         android:textColor="@color/blue_color"
         android:textSize="@dimen/_26ssp"
         app:layout_constraintBottom_toTopOf="@id/questions"
         app:layout_constraintEnd_toEndOf="@id/questions"
         app:layout_constraintStart_toStartOf="@+id/back"
-        app:layout_constraintTop_toBottomOf="@+id/back" />
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        tools:targetApi="o" />
 
     <TextView
         android:id="@+id/questions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/_25sdp"
         android:autoSizeMaxTextSize="@dimen/_16ssp"
         android:autoSizeMinTextSize="@dimen/_14ssp"
         android:autoSizeStepGranularity="2sp"
@@ -51,7 +51,7 @@
         android:layout_marginBottom="@dimen/_10sdp"
         android:gravity="center_vertical"
         android:justificationMode="inter_word"
-        android:text="Соотнесите эти памятники архитектуры со стилем, в котором они построены:"
+        android:text="@string/test_title_tesst"
         android:textColor="@color/gray"
         app:layout_constraintBottom_toTopOf="@id/dragBox"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +108,7 @@
                 android:layout_height="@dimen/_50sdp"
                 android:fontFamily="@font/candara"
                 android:gravity="center"
-                android:text="Правильный ответ:\n1) [2], 2) [4], 3) [1], 4) [3]"
+                tools:text="Правильный ответ:\n1) [2], 2) [4], 3) [1], 4) [3]"
                 android:textColor="@color/doneChoice"
                 android:textSize="@dimen/_16ssp"
                 android:visibility="gone"
@@ -195,7 +195,7 @@
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/candara_bold"
                 android:gravity="center"
-                android:text="Эклектика"
+                tools:text="Эклектика"
                 android:textColor="@color/gray"
                 tools:targetApi="o" />
         </LinearLayout>
@@ -217,7 +217,8 @@
         app:layout_constraintTop_toBottomOf="@id/button1"
         app:rippleColor="@color/drag_drop_box"
         app:strokeColor="@color/light_gray"
-        app:strokeWidth="3dp">
+        app:strokeWidth="3dp"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -255,7 +256,7 @@
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/candara_bold"
                 android:gravity="center"
-                android:text="Барокко с элементами классицизма"
+                tools:text="Барокко с элементами классицизма"
                 android:textColor="@color/gray"
                 tools:targetApi="o" />
         </LinearLayout>
@@ -277,7 +278,8 @@
         app:layout_constraintTop_toBottomOf="@id/button2"
         app:rippleColor="@color/drag_drop_box"
         app:strokeColor="@color/light_gray"
-        app:strokeWidth="3dp">
+        app:strokeWidth="3dp"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -315,7 +317,7 @@
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/candara_bold"
                 android:gravity="center"
-                android:text="Неорусский (псевдорусский) стиль"
+                tools:text="Неорусский (псевдорусский) стиль"
                 android:textColor="@color/gray"
                 tools:targetApi="o" />
         </LinearLayout>
@@ -337,7 +339,8 @@
         app:layout_constraintTop_toBottomOf="@id/button3"
         app:rippleColor="@color/drag_drop_box"
         app:strokeColor="@color/light_gray"
-        app:strokeWidth="3dp">
+        app:strokeWidth="3dp"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -375,7 +378,7 @@
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/candara_bold"
                 android:gravity="center"
-                android:text="Неоготика"
+                tools:text="Неоготика"
                 android:textColor="@color/gray"
                 tools:targetApi="o" />
         </LinearLayout>
@@ -403,7 +406,7 @@
             android:layout_marginTop="@dimen/_13ssp"
             android:layout_marginBottom="@dimen/_13sdp"
             android:fontFamily="@font/candara_bold"
-            android:text="Ответить"
+            android:text="@string/feedback"
             android:textColor="@color/blue_color"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="parent"

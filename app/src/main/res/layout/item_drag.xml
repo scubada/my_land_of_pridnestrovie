@@ -26,7 +26,8 @@
                     android:id="@+id/image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/drag_image" />
 
                 <LinearLayout
                     android:id="@+id/colored"
@@ -40,6 +41,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/white_gray"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/drag_load_image"
                     android:src="@drawable/progress_animation" />
 
             </RelativeLayout>
